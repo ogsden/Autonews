@@ -1,0 +1,54 @@
+.add-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.card-container {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.date {
+  text-align: end;
+  margin-bottom: auto;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 0.85em;
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  color: white;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.description {
+  min-height: 3em;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 30%;
+  }
+}

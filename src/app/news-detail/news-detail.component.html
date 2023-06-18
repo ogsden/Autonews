@@ -1,0 +1,12 @@
+<nz-layout>
+  <nz-header><h1 class="header">Автомобильные новости</h1></nz-header>
+  <nz-content class="content">
+    <h2 class="title">{{ news.title }}</h2>
+    <p class="description">{{ news.description }}</p>
+    <p class="publishedDate">
+      Опубликовано
+      {{ news.publishedDate | date : "longDate" : "" : "ru" }}
+    </p>
+    <section [innerHTML]="news.text"></section>
+  </nz-content>
+</nz-layout>
